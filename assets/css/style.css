@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+    color: #e8e6e3;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+
+.formatted-label {
+    display: block;
+    margin-top: 30px;
+}
+
+.formatted-input {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #272a2c;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #424242;
+} 
+
+.formatted-button {
+    width: 100%;
+    height: 52px;
+    background-color: #2392a3;
+    color: #e8e6e3;
+    font-size: 16px;
+    font-weight: 750;
+    border: 5px solid #208595;
+    border-radius: 10px;
+}
+
+.formatted-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.row {
+    margin: 24px 120px;
+    position: absolute;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.col {
+    float: left;
+    padding: 44px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.toggled-flag {
+    border-radius: 20px;
+    width: 108px;
+    box-shadow: 0px 0px 0px 4px rgba(24, 26, 27);
+    filter: grayscale(100%);
+    /* border: 4px solid #181a1b; */
+}
+
+.toggled-flag:hover {
+    border-radius: 20px;
+    width: 108px;
+    box-shadow: 0px 0px 0px 4px rgba(35, 146, 163, 0.4);
+    filter: grayscale(30%);
+}
+
+.clicked-button {
+    box-shadow: 0px 0px 0px 4px rgba(35, 146, 163, 0.8);
+    filter: none;
+    /* border: 4px solid #2392a3; */
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt32 {
+    margin-top: 32px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #e8e6e3;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+/* Main */
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    color: #e8e6e3;
+    background-color: #181a1b ;
+    font-size: 20px;
+    z-index: 1;
+}
+#nav {
+    padding-left: 76px;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    opacity: 1;
+    display: inline-block;
+    line-height: 60px;  
+    padding: 0 12px;
+    text-decoration: none;
+    /* position: absolute; */
+}
+
+#nav li:hover a {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#nav img {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Generator */
+#generator {
+    height: 600px;
+    background-color: #272a2c;
+    margin-top: 60px;
+    position: relative;
+}
+
+#generator .input-section {
+    background-color: #181a1b;
+    border-radius: 30px;
+    color: #e8e6e3;
+}
+
+#generator #input-heading {
+    font-size: 20px;
+}
+
+#generator input {
+    margin: auto;
+}
+
+#generator .fact-section {
+    background-color: #256d79;
+    border-radius: 30px;
+}
+
+#generator p {
+    font-size: 16px;
+    color: #e8e6e3;
+    margin-top: 16px;
+}
+
+#generator .learn-button {
+    background-color: #256d79;
+    font-size: 16px;
+    PADDING: 12px 24px;
+    border-radius: 10px;
+    border: 2px solid #303436;
+}
+
+#generator .learn-button:hover {
+    background-color: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+/* Feedback */
+
+#feedback {
+    background-color: #1f2223;
+    padding: 32px;
+}
+
+#feedback .feedback-form {
+    background-color: #131516;
+    width: 462px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#feedback #input-message {
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* About */
+#about-me {
+    background-color: #272a2c;
+    padding: 32px;
+}
+
+#about-me .about-me-content {
+    padding: 0 60px;
+}
+
+#about-me .avatar {
+    float: left;
+}
+
+#about-me .avatar img {
+    width: 300px;
+    /* vertical-align: middle; */
+    /* float: left; */
+    border-radius: 50%;
+    /* padding: 32px; */
+    margin: 68px;
+}
+
+#about-me .about-me-description img {
+    width: 52px;
+    vertical-align: middle;
+}
+
+#about-me .about-me-description h2 {
+    padding-top: 48px;
+}
+
+#about-me .about-me-description a {
+    font-size: 24px;
+    padding-right: 16px;
+    /* text-decoration: none; */
+    /* font-style: italic; */
+    color: #2392a3;
+}
+
+#about-me .about-me-description span {
+    color: #2392a3;
+    font-style: italic;
+}
+
+#footer {
+    background-color: #1f2223;
+}

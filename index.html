@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickname generator</title>
+    <link rel="icon" href="./assets/img/logo_favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">   
+                <li><a href="#"><img src="./assets/img/logo_favicon.png" alt="Logo" class="logo"></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
+                <li><a href="#about-me">ABOUT ME</a></li>
+            </ul>
+        </div>
+        
+        <div id="generator">
+            <div class="row">
+                <!-- Input form -->
+                <div class="input-section col col-half">
+                    <!-- Heading -->
+                    <h4 id="input-heading">Ten seconds is all it takes!</h4>
+
+                    <!-- User input -->
+                    <div>
+                        <label for="input-name" class="formatted-label" >Name</label>
+                        <input type="text" id="input-name" class="formatted-input" placeholder="Enter your Name">
+                    </div>
+                    <div>
+                        <label for="input-date" class="formatted-label">Date of birth</label>
+                        <input type="text" id="input-date" class="formatted-input" placeholder="Enter your Date of Birth (DD/MM/YYYY)">
+                    </div>
+                    
+                    <!-- Select languages -->
+                    <div class="languages">
+                        <div class="col col-half flex">
+                            <input class="toggled-flag" type="image" src="./assets/img/flag/eng_flag.png" onclick="this.classList.toggle('clicked-button')">
+                        </div>
+                        <div class="col col-half flex">
+                            <input class="toggled-flag" type="image" src="./assets/img/flag/vi_flag.png" onclick="this.classList.toggle('clicked-button')">
+                        </div>
+                    </div>
+                    
+                    <!-- Get it! -->
+                    <button class="formatted-button">GET IT!</button>
+                </div>
+                
+                <!-- Fact -->
+                <div class="fact-section col col-half">
+                    <h2 class="fact-heading">Nickname generator</h2>
+                    <p class="fact-description justify-text">
+                        The principle is very simple: 
+                        <br><br>
+                        Numerology states that each letter, number, thought, and behavior carries a certain frequency. These frequencies will affect emotions and spirits, thereby forming character and fate in the long run.
+                        <br><br>
+                        Two factors that greatly influence fate are the date of birth and the name. Because they are more closely related to life than other factors. Every time a name or date of birth is used, these frequencies are reinforced and impact on life.
+                        <br><br>
+                        So choosing a suitable name will help change that frequency, thereby changing your life as you want.
+                        <br><br>
+                    </p>
+                    <button class="learn-button">
+                        LEARN MORE 
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="feedback">
+            <div class="feedback-form">
+                <h2 class="feedback-heading text-center">Feedback</h2>
+                <p class="feedback-description text-center">Your feedback matters!</p>
+                <label for="input-email" class="formatted-label" >Your email</label>
+                <input type="email" id="input-email" class="formatted-input" placeholder="Enter your email">
+                <label for="input-message" class="formatted-label">Your feedback for me</label>
+                <!-- <input type="text" id="input-message" class="formatted-input" placeholder="Enter your message"> -->
+                <textarea id="input-message" class="formatted-input" cols="56" rows="4" placeholder="Enter your message"></textarea>
+                <button class="formatted-button mt32">Submit</button>
+            </div>
+        </div>
+
+        <div id="about-me">
+            <div class="about-me-content">
+                <div class="avatar">
+                    <img src="./assets/img/avatar.jpg" alt="My avatar">
+                    <div class="clear"></div>
+                </div>
+                <div class="about-me-description">
+                    <h2>
+                        About me
+                        <!-- <img src="./assets/img/logo_favicon.png" alt="Logo" class="logo-h2"> -->
+                    </h2>
+                    <p class="mt16 justify-text">Hi. My name is Wilson. I'm a Front End Developer from HCMC, Vietnam. I like coding and have been self-learned how to code (seriously) since October 2022.
+                        <br><br>
+                        When I'm not coding, you'll find me singing, cycling, learning languages or holding hands with Louis.
+                        <br><br>
+                        Feel free to reach me via my email: <span>quanganhha99@gmail.com</span> or connect with me on Linkedin.
+                    </p>
+                    <div class="mt32">
+                        <a href="https://www.linkedin.com/in/quanganhha99/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.topcv.vn/xem-cv/Ag4ACVAODwFdWldTAlBXBFZWA1cDUgdaAAIOXgc22f">my CV</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer" class="text-center">
+            <p>made with ❤️ by wilson 🐱‍💻</p>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
