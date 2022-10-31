@@ -253,16 +253,20 @@ h2 {
 }
 
 #about-me .about-me-description a {
-    /* font-size: 16px; */
-    padding-right: 16px;
-    /* text-decoration: none; */
+    font-size: 24px;
+    margin-right: 16px;
+    text-decoration: none;
     /* font-style: italic; */
-    color: #2392a3;
+    /* color: #2392a3; */
+}
+
+#about-me .about-me-description a:hover {
+    opacity: 0.8;
 }
 
 #about-me .about-me-description span {
-    color: #2392a3;
-    font-style: italic;
+    /* color: #2392a3; */
+    /* font-style: italic; */
 }
 
 #footer {
